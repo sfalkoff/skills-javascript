@@ -239,7 +239,19 @@
 </fieldset>
 
 <script>
-  // code here for above problem
+  button5 =document.getElementById("make-todo-list");
+
+  function makeList() {
+    var toDoList = document.getElementById("empty-todo-list");
+    for (var i = 1; i < 11; i++) {
+       var task = document.createElement("li");
+       task.innerText = i;
+       toDoList.appendChild(task);
+    } 
+  }
+
+  button5.addEventListener("click", makeList);
+
 </script>
 
 <div class="hint">
